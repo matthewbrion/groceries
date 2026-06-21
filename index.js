@@ -50,8 +50,9 @@ console.log(getCategories(INVENTORY))
  * @returns {string[]} SKUs of given items
  */
 function getSkus(items) {
-  // TODO
+  return items.map((item) => {`${item.id}#${item.name}#${item.name.length}`})
 }
+console.log(getCategories(INVENTORY))
 
 /**
  * @param {Item[]} items
