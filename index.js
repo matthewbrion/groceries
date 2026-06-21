@@ -36,8 +36,9 @@ console.log(getIds(INVENTORY))
  * @returns {string[]} categories of given items
  */
 function getCategories(items) {
-  // TODO
+  return items.map((item) => {return item.category})
 }
+console.log(getCategories(INVENTORY))
 
 /**
  * Vendors often use SKUs (Stock Keeping Units) to manage their inventory.
