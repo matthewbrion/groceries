@@ -69,8 +69,9 @@ console.log(getFruits(INVENTORY))
  * @returns {Item[]} all items in the given category
  */
 function getItemsByCategory(items, category) {
-  // TODO
+  return items.filter((item) => item.category === category)
 }
+console.log(getItemsByCategory(INVENTORY))
 
 /**
  * An item is considered "cheap" if its price is $2.50 or less.
