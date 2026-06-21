@@ -52,7 +52,7 @@ console.log(getCategories(INVENTORY))
 function getSkus(items) {
   return items.map((item) => {`${item.id}#${item.name}#${item.name.length}`})
 }
-console.log(getCategories(INVENTORY))
+console.log(getSkus(INVENTORY))
 
 /**
  * @param {Item[]} items
