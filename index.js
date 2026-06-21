@@ -79,15 +79,16 @@ console.log(getItemsByCategory(INVENTORY, "dairy"))
  * @returns {Item[]} all cheap items
  */
 function getCheapItems(items) {
-  // TODO
+  return items.filter((item) => item.price <= 2.50)
 }
+console.log(getCheapItems(INVENTORY))
 
 /**
  * @param {Item[]} items
  * @returns {number} the total quantity of all items given
  */
 function countItems(items) {
-  // TODO
+  
 }
 
 /**
