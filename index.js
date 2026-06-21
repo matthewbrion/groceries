@@ -59,7 +59,7 @@ console.log(getSkus(INVENTORY))
  * @returns {Item[]} all items in the "fruit" category
  */
 function getFruits(items) {
-  return items.filter((item) => {return item.category === "fruit"})
+  items.filter((item) => item.category === "fruit")
 }
 console.log(getFruits(INVENTORY))
 
