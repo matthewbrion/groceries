@@ -59,8 +59,9 @@ console.log(getSkus(INVENTORY))
  * @returns {Item[]} all items in the "fruit" category
  */
 function getFruits(items) {
-  // TODO
+  return items.filter((item) => {return item.category === "fruit"})
 }
+console.log(getFruits(INVENTORY))
 
 /**
  * @param {Item[]} items
