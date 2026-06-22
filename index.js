@@ -100,8 +100,12 @@ console.log(countItems(INVENTORY))
  * @returns {number} the cost of purchasing every single item
  */
 function getTotalCost(items) {
-  // TODO
+  let total = 0
+  for (let i = 0; i < items.length; i++) {
+    total += items[i].quantity * items[i].price
+  } return total
 }
+console.log(getTotalCost(INVENTORY))
 
 /**
  * @param {Item[]} items
