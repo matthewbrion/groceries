@@ -112,5 +112,13 @@ console.log(getTotalCost(INVENTORY))
  * @returns {Item} the item with the highest price
  */
 function getMostExpensiveItem(items) {
-  // TODO
+  let cher = null
+  for (let i = 0; i < items.length; i++) {
+    if (cher === null) {
+      cher = items[i]
+    } else if (items[i].price > cher) {
+      cher = items[i]
+    } 
+  } return cher
 }
+console.log(getMostExpensiveItem(INVENTORY))
