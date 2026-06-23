@@ -116,7 +116,7 @@ function getMostExpensiveItem(items) {
   for (let i = 0; i < items.length; i++) {
     if (cher === null) {
       cher = items[i]
-    } else if (items[i].price > cher) {
+    } else if (items[i].price > cher.price) {
       cher = items[i]
     } 
   } return cher
